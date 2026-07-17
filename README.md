@@ -41,7 +41,9 @@ This is the 1911 crack writing `0xCC` at runtime into `RDR2.exe`'s code section 
 | Run RDR2.exe directly (no 1911) | Dies immediately, no crack |
 | Run Launcher_with_cracktro.exe | Different crash (page fault) |
 | Copy files into bottle (no symlink) | Same crash |
-| SIGSTOP/SIGCONT trick | No effect on crash |
+| SIGSTOP/SIGCONT trick | No effect on Crash Override (macOS) |
+| Crash dialog suppression (`ShowCrashDialog=0`) | Still crashes, just no popup |
+| ChilledEther/mac-crossover-fixes crash patch | Same INT 3 crash |
 
 ### Root Cause
 The 1911 crack uses runtime code patching (writes INT 3 at specific addresses in RDR2.exe) as an anti-debug mechanism. Wine/CrossOver dispatches the resulting exception to the debugger instead of the crack's VEH handler.
