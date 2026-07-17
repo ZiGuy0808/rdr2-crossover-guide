@@ -1,0 +1,6 @@
+<API>kSettingAPI_Vulkan</API>
+<windowed value="1" />
+<screenWidth value="1280" />
+<screenHeight value="720" />
+<refreshRateNumerator value="60" />
+<refreshRateDenominator value="1" />

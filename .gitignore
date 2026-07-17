@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+._*
+*.swp
+*.swo
+*~
+.cache
+
+# Game files (too large, not part of guide)
+*.rpf
+*.rgl
+*.dll
+*.exe
